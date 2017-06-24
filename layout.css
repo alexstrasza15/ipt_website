@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.background {
+    background-color: #F0F8FF;
+    height: 100em;
+    /*Height value should be changed manually according to the amount of text*/
+    Width: 100%;
+    /* I think this combination is 
+    good for the background colour, also manually adjust the pixel height size for each */
+    top: 0px;
+    position: absolute;
+}
+
+.topTitle{
+    color: black;
+    font-family: Calibri;
+    text-align: center;
+    z-index: 11;
+    font-size: 80px;
+    top: -100px;
+}
+
+.backImg {
+    overflow: hidden;
+    position: relative;
+    
+    /*
+    top: 10px;
+    left: 27px;
+    right: 27px;
+    max-height: 500px;
+    */
+
+}
+
+.backImg img {
+    width: 80%;
+    height: auto;
+}
+
+@media (max-height: 780px) {
+    .backImg img.resize{
+        max-height: 400px;
+        overflow: hidden;
+
+    }
+}
+
+@media (min-height: 780px) {
+    .backImg img.resize {
+        max-height: 700px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1000px) {
+    .conText {
+        padding-left: 200px;
+        padding-right: 200px;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .conText {
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
+}
+
+.titleText {
+    font-family: Calibri;
+    font-size: 50px;
+    text-align: center;
+
+    color: white;
+    padding-top: 50px;
+    
+}
+
+.conText {
+    font-family: Calibri;
+    line-height: 25px;
+    font-size: 20px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+h3.header{
+    opacity: 1.0;
+    position: relative;
+    top: 70px;
+    font: Calibri;
+    text-align: center;
+}
+
+#heading1{
+    text-align: center;
+    font: Calibri;
+    position: relative;
+}
+
+.textBack{
+    background-color: #333;
+    width: 80%;
+    height: auto;
+    top: 100px;
+    display: table;
+    margin: 0 auto;
+
+}
