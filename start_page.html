@@ -23,7 +23,7 @@ body {
 
 #backImg img {
 
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
     z-index: -2;
 }
@@ -33,7 +33,7 @@ body {
     .interestingbutton {
     padding: 24px 20px;
     width: 250px;
-    top: 29em;
+    top: 30em;
     }
 
 
@@ -46,16 +46,6 @@ body {
     width: 250px;
     top:35em;
     }
-}
-    
-@media (min-height : 1000px){
-
-    .interestingbutton {
-    padding: 24px 20px;
-    width: 250px;
-    top:35em;
-    }
-   
 }
 
 
@@ -115,6 +105,15 @@ body {
 
 .nav_background {
     background-color: rgba(0, 0, 0, 0)
+}
+
+.backColor {
+    position: relative;
+    top: 0px;
+    background-color: #333;
+    height: 120em;
+    width: 100em;
+    overflow: hidden;
 }
 
 </style>
@@ -181,9 +180,8 @@ document.getElementById("link").innerHTML = text;
     
 
 </div>
+<div class="backColor">
 
-<!-- problem for scalability on phones is the image doesn't cover the entie length
-and the button ends up being on white background. @luis.
--->
+</div>
 </body>
 </html>
