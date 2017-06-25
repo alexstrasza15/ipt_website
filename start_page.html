@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Natural Phenomena</title>
+    
+    <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/h7fe6ZL.jpg"/>
+    <title>Natural Phenomena</title>
 
 <style type="text/css">
-
-* {
-    font-family: calibri;
-}
 
 body {
     margin: 0;
@@ -21,47 +18,31 @@ body {
     overflow: hidden;
     z-index: 0;
     max-height: 780px;
+    opacity: 1.0;
+    filter: brightness(35%);
 }
 
 #backImg img {
-    flex-shrink: 0;
+
     min-width: 100%;
     min-height: 100%;
     z-index: -2;
 }
 
-#maintext {
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    top: 130px;
-    text-align: center;
-    z-index: -2;
-    
-}
-
 @media (max-height : 768px) {
-    #learnbutton {
+
+    .interestingbutton {
     padding: 24px 20px;
     width: 250px;
-    top: 27em;
-    }
-    #interestingbutton {
-    padding: 24px 20px;
-    width: 250px;
-    top:22em;
+    top: 32em;
     }
 
 
 }
 
 @media (min-height : 768px){
-    #learnbutton {
-    padding: 24px 20px;
-    width: 250px;
-    top: 40em;
-    }
-    #interestingbutton {
+
+    .interestingbutton {
     padding: 24px 20px;
     width: 250px;
     top:35em;
@@ -69,16 +50,18 @@ body {
 }
 
 
-#interestingbutton, #learnbutton {
+.interestingbutton {
     display: block;
     text-align: center;
+    align-content: center;
     text-decoration: none;
     margin: auto;
     background-color: #333;
-    color: #51e886;
+    color: #f0f8ff;
     position: absolute;
     z-index: 5;
     border-radius: 50px;
+    font-family: Calibri;
 }
 
 
@@ -88,12 +71,41 @@ body {
 }
 
 .topTitle{
-    color: black;
+    color: white;
     font-family: Calibri;
     text-align: center;
     font-size: 80px;
-    top: -100px;
-    z-index: 5;
+    z-index: 11;
+    top: 0px;
+    position: absolute;
+}
+
+.natTitle{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.desText {
+    color: white;
+    padding-right: 30%;
+    padding-left: 30%;
+    z-index: 3;
+    position: absolute;
+    font-family: Calibri;
+    font-size: 20px;
+    top: 350px;
+}
+
+.startContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 400px;
+}
+
+.nav_background {
+    background-color: rgba(0, 0, 0, 0)
 }
 
 </style>
@@ -104,33 +116,61 @@ body {
 <body>
 
 <div class="nav_background">
-  <div class="topnav">
-  <a class="active" href="https://ipt-website-lear1001001.c9users.io/home_page.html">Home</a>
 
-  <a href="#contact">Bibliography</a>
-  <a href="#about">About</a>
+    <div class="natTitle">
+        <a href="start_page.html">Home</a>
+    </div>
+
+    <div class="topnav">
+
+  <a href="about_page.html" style="float: right;">About</a>
   <div class="dropdown">
-      <button class="dropbtn">Natural Phenomena</button>
+      <button class="dropbtn" >Natural Phenomena</button>
       <div class="dropdown-content">
         <a href="non_new_fluids.html">Non Newtonian Fluids</a>
-        <a href="#">Emergence</a>
-        <a href="#">Northern Lights</a>
-        <a href="#">Wormholes</a>
-        <a href="#">Quantum Theory</a>
-        <a href="#">Acid Rain</a>
+        <a href="emergence.html">Emergence</a>
+        <a href="northern_lights.html">Northern Lights</a>
+        <a href="wormholes.html">Wormholes</a>
+        <a href="quantum_theory.html">Quantum Theory</a>
+        <a href="acid_rain.html">Acid Rain</a>
       </div>
   </div>
 </div>
+</div>
+
+<div class="startContent">
+        <h3 class="topTitle"> Natural Phenomena </h3>
+
+        <p class="desText">Natural Phenomena are all around us, they can be things that happen all the time,
+            but we never notice it, or majestic occurences which have captivated our race for generations.
+        </p>
+
+        <a id="link"></a>
+
+<script>
+if (Math.random() < 0.15) {
+    text = "<a href='non_new_fluids.html'  class='interestingbutton'>Show Me Something Interesting</a>";
+} else if (0.15 < Math.random() < 0.3) {
+    text = " <a href='emergence.html' class='interestingbutton'>Show Me Something Interesting</a>";
+} else if (0.3 < Math.random() < 0.45) {
+    text = " <a href='northern_lights.html' class='interestingbutton'>Show Me Something Interesting</a>";
+} else if (0.45 < Math.random() < 0.6) {
+    text = " <a href='wormholes.html' class='interestingbutton'>Show Me Something Interesting</a>";
+} else if (0.6 < Math.random() < 0.75) {
+    text = " <a href='quantum_theory.html' class='interestingbutton'>Show Me Something Interesting</a>";
+}else {
+    text = "<a href='acid_rain.html' class='interestingbutton'>Show Me Something Interesting</a>";
+}
+document.getElementById("link").innerHTML = text;
+
+</script>
 </div>
 
 <div id="backImg">
 
     <img src="https://www.nordicvisitor.com/images/iceland/winter/northern-lights-lake-thingvellir-national-park-iceland.jpg"/>
     
-            <p>Natural Phenomena</p>
 
-        <a id="learnbutton" href="#">Learn more</a>
-        <a id="interestingbutton" href="#">Show me something interesting</a>
 </div>
 
 <!-- problem for scalability on phones is the image doesn't cover the entie length
