@@ -4,20 +4,21 @@ body {
 
 .background {
     background-color: #F0F8FF;
-    height: 100em;
+    height: 120em;
     /*Height value should be changed manually according to the amount of text*/
     Width: 100%;
     /* I think this combination is 
     good for the background colour, also manually adjust the pixel height size for each */
     top: 0px;
     position: absolute;
+    z-index: -2;
 }
 
 .topTitle{
     color: black;
     font-family: Calibri;
     text-align: center;
-    z-index: 11;
+    z-index: 1;
     font-size: 80px;
     top: -100px;
 }
@@ -25,6 +26,8 @@ body {
 .backImg {
     overflow: hidden;
     position: relative;
+    top: 30px;
+    padding-bottom: 60px;
     
     /*
     top: 10px;
@@ -38,6 +41,9 @@ body {
 .backImg img {
     width: 80%;
     height: auto;
+    box-shadow: 3px 10px 5px #888888;
+    z-index: -1;
+
 }
 
 @media (max-height: 780px) {
@@ -71,19 +77,22 @@ body {
     }
 }
 
+/*
 .titleText {
     font-family: Calibri;
-    font-size: 50px;
+    font-size: 68px;
     text-align: center;
-
-    color: white;
+    z-index: 1;
+    color: black;
     padding-top: 50px;
+    position: relative;
     
 }
+*/
 
 .conText {
     font-family: Calibri;
-    line-height: 25px;
+    line-height: 38px;
     font-size: 20px;
     color: white;
     padding-top: 30px;
@@ -108,8 +117,9 @@ h3.header{
     background-color: #333;
     width: 80%;
     height: auto;
-    top: 100px;
+    padding-top: 100px;
     display: table;
     margin: 0 auto;
 
 }
+
