@@ -3,6 +3,68 @@
 <head>
     <link type="text/css" rel="stylesheet" href="layout.css"/>
     <link type="text/css" rel="stylesheet" href="nav_bar.css"/>
+    <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/h7fe6ZL.jpg"/>
+    <title>About</title>
+
+<style>
+
+.aboutText {
+    font-family: Calibri;
+    color: white;
+    line-height: 25px;
+    font-size: 17px;
+    padding-left: 20%;
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  left: 20%;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F0F8FF;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: Calibri;
+  color: #333;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.topnav a{
+  background-color: #F0F8FF;
+  color: black;
+}
+
+
+</style>
+
 </head>
 
 <body>
@@ -10,20 +72,23 @@
 <div class = "background">
 
 <div class = "topTitle">
-    <h3>Natural Phenomena</h3>
+    <h3>About Us</h3>
 </div>
 
 <div class="nav_background">
-    <div class="topnav">
-  <a class="active" href="#home">Home</a>
 
-  <a href="glossary.html">Glossary</a>
-  <a href="#about">About</a>
+    <div class="natTitle">
+        <a href="start_page.html">Home</a>
+    </div>
+    
+    <div class="topnav">
+
+  <a style="float: right;"href="about_page.html">About</a>
   <div class="dropdown">
       <button class="dropbtn">Natural Phenomena</button>
       <div class="dropdown-content">
         <a href="non_new_fluids.html">Non Newtonian Fluids</a>
-        <a href="emergenge.html">Emergence</a>
+        <a href="emergence.html">Emergence</a>
         <a href="northern_lights.html">Northern Lights</a>
         <a href="wormholes.html">Wormholes</a>
         <a href="quantum_theory.html">Quantum Theory</a>
@@ -34,22 +99,65 @@
 </div>
             
         <div class = "textBack">
-            
-        <h3 class="titleText">About</h3>
     
-    <p class="conText"> 
+    <p class="aboutText" style="font-size: 30px; padding-bottom: 60px;"> Who We Are </p>
+
+<table>
+
+<tr>
+
+<td>
+<div class="container">
+  <img src="http://infohost.nmt.edu/~engage/media/images/people/person.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+        <h4> Trent Z </h4>
+        <p> May or may not be human.</p>
+
+    </div>
+  </div>
+</div>
+</td>
+
+<td>
+<div class="container">
+  <img src="http://infohost.nmt.edu/~engage/media/images/people/person.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+        <h4> Alex W </h4>
+        <p> The Tennis God Himself.</p>
+
+    </div>
+  </div>
+</div>
+</td>
+
+<td>
+<div class="container">
+  <img src="http://infohost.nmt.edu/~engage/media/images/people/person.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+        <h4> Luis A </h4>
+        <p> The Maths God Himself. </p>
+
+    </div>
+  </div>
+</div>
+</td>
+
+</tr>
+
+</table>
+
+    <p class="aboutText" style="padding-top: 100px;"> 
         
-        something, something, something;
+        
     
     </p>
-    <p class="conText"> 
+
+    <p class="aboutText"> 
         
-        something, something, something;
-    
-    </p>
-    <p class="conText"> 
-        
-        something, something, something;
+        © copyright 2017
     
     </p>
         </div>
